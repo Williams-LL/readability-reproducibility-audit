@@ -34,10 +34,8 @@ def read_clean_file(file_path: Path) -> str:
         text = raw_bytes.decode("utf-16")
     else:
         # 2. Intentar UTF-8 estricto; si falla, usar Windows-1252 (superset de Latin-1)
-        try:
-            text = raw_bytes.decode("utf-8")
-        except UnicodeDecodeError:
-            text = raw_bytes.decode("cp1252", errors="replace")
+        content = read_clean_file(file_path)
+        clean_text = clean_onestop_text(content)
 
     return text
 
