@@ -4,3 +4,4 @@ data/raw/
 *.pth
 __pycache__/
 .DS_Store
+results/logs/

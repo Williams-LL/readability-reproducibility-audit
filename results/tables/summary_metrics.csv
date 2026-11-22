@@ -1,0 +1,7 @@
+exp_name,dataset,split_type,backbone,feature_family,train_fraction,n_runs,rmse_mean,rmse_std,pearson_r_mean,pearson_r_std,accuracy_mean,accuracy_std,macro_f1_mean,macro_f1_std,qwk_mean,qwk_std
+exp_A_clear,clear,stratified,roberta-base,all,1.0,15,0.656,0.03,0.882,0.006,,,,,,
+exp_A_clear,clear,stratified,roberta-base,none,1.0,15,0.62,0.025,0.883,0.006,,,,,,
+exp_A_onestop,onestop,grouped,roberta-base,all,1.0,25,,,,,86.746,3.893,86.604,3.989,0.892,0.033
+exp_A_onestop,onestop,grouped,roberta-base,none,1.0,25,,,,,85.718,3.615,85.482,3.866,0.884,0.029
+exp_A_onestop,onestop,stratified,roberta-base,all,1.0,25,,,,,84.928,4.501,84.785,4.603,0.878,0.039
+exp_A_onestop,onestop,stratified,roberta-base,none,1.0,25,,,,,85.812,3.563,85.624,3.698,0.888,0.031
